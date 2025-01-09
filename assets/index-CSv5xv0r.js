@@ -22,7 +22,7 @@
  * SPDX-License-Identifier: BSD-3-Clause
  */const K=r=>(t,e)=>{e!==void 0?e.addInitializer(()=>{customElements.define(r,t)}):customElements.define(r,t)},R={primary:f`#1A1A1D`,secondary:f`#3B1C32`,tertiary:f`#A64D79`,accent:f`#6A1E55`,ctext:f`#FFFFFF`,ctext_muted:f`#CCCCCC`};var Nt=Object.defineProperty,Rt=Object.getOwnPropertyDescriptor,Ht=(r,t,e,s)=>{for(var i=s>1?void 0:s?Rt(t,e):t,n=r.length-1,o;n>=0;n--)(o=r[n])&&(i=(s?o(t,e,i):o(i))||i);return s&&i&&Nt(t,e,i),i};let k=class extends A{render(){return Z`
             <figure class="title-section">
-                <img src="/website/zix.gif" alt="zix">
+                <img src="/zix.gif" alt="zix">
                 <figcaption>
                     <h1 class="title">ZIX</h1>
                     <h2 class="subtitle">AN LS ALTERNATIVE</h2>
@@ -30,7 +30,7 @@
             </figure>
             <section class="continuos">
                 <h3>READY TO REVOLUTIONIZE YOUR TERMINAL?</h3>
-                <img src="/website/arrow.svg" alt="arrow">
+                <img src="/arrow.svg" alt="arrow">
             </section>
         `}};k.styles=f`
         :host   {
@@ -145,14 +145,14 @@
                 <div class="card windows">
                     <figure>
                         <figcaption>WINDOWS</figcaption>
-                        <img class="win-img" src="/website/windows.svg" alt="windows">
+                        <img class="win-img" src="/windows.svg" alt="windows">
                     </figure>
                     <a href="https://github.com/zix-rs/zix/releases/download/v0.0.5/zix-installer.exe">DOWNLOAD</a>
                 </div>
                 <div class="card rust">
                     <figure>
                         <figcaption>USING CARGO</figcaption>
-                        <img class="rust-img" src="/website/rust.svg" alt="windows">
+                        <img class="rust-img" src="/rust.svg" alt="windows">
                     </figure>
                     <a href="#">CARGO INSTALL ZIX</a>
                 </div>
@@ -244,11 +244,11 @@
             <header>
                 <a class="social" href="https://twitter.com/arkeazs">
                     <p>TWITTER</p>
-                    <img src="/website/twitter.svg" alt="twitter">
+                    <img src="/twitter.svg" alt="twitter">
                 </a>
                 <a class="social" href="https://github.com/zix-rs/zix">
                     <p>GITHUB</p>
-                    <img src="/website/github.svg" alt="github">
+                    <img src="/github.svg" alt="github">
                 </a>
             </header>
             <main>
