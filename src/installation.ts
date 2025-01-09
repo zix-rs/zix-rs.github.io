@@ -97,14 +97,14 @@ export class Installation extends LitElement {
                 <div class="card windows">
                     <figure>
                         <figcaption>WINDOWS</figcaption>
-                        <img class="win-img" src="/zix/windows.svg" alt="windows">
+                        <img class="win-img" src="/website/windows.svg" alt="windows">
                     </figure>
-                    <a href="https://github.com/arkeasz/zix/releases/download/v0.0.5/zix-installer.exe">DOWNLOAD</a>
+                    <a href="https://github.com/zix-rs/zix/releases/download/v0.0.5/zix-installer.exe">DOWNLOAD</a>
                 </div>
                 <div class="card rust">
                     <figure>
                         <figcaption>USING CARGO</figcaption>
-                        <img class="rust-img" src="/zix/rust.svg" alt="windows">
+                        <img class="rust-img" src="/website/rust.svg" alt="windows">
                     </figure>
                     <a href="#">CARGO INSTALL ZIX</a>
                 </div>

@@ -85,11 +85,11 @@ export class ZixWeb extends LitElement  {
             <header>
                 <a class="social" href="https://twitter.com/arkeazs">
                     <p>TWITTER</p>
-                    <img src="/zix/twitter.svg" alt="twitter">
+                    <img src="/website/twitter.svg" alt="twitter">
                 </a>
-                <a class="social" href="https://github.com/arkeasz/zix/">
+                <a class="social" href="https://github.com/zix-rs/zix">
                     <p>GITHUB</p>
-                    <img src="/zix/github.svg" alt="github">
+                    <img src="/website/github.svg" alt="github">
                 </a>
             </header>
             <main>

@@ -114,7 +114,7 @@ export class Presentation extends LitElement {
     render() {
         return html`
             <figure class="title-section">
-                <img src="/zix/zix.gif" alt="zix">
+                <img src="/website/zix.gif" alt="zix">
                 <figcaption>
                     <h1 class="title">ZIX</h1>
                     <h2 class="subtitle">AN LS ALTERNATIVE</h2>
@@ -122,7 +122,7 @@ export class Presentation extends LitElement {
             </figure>
             <section class="continuos">
                 <h3>READY TO REVOLUTIONIZE YOUR TERMINAL?</h3>
-                <img src="/zix/arrow.svg" alt="arrow">
+                <img src="/website/arrow.svg" alt="arrow">
             </section>
         `;
     }
