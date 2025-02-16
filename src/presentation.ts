@@ -71,45 +71,6 @@ export class Presentation extends LitElement {
             font-size: clamp(1rem, 1.5vw, 2rem);
             text-align: center
         }
-
-        // @media (max-width: 768px) {
-        //     figure {
-        //         flex-direction: column; /* Acomoda elementos verticalmente */
-        //         gap: 1.5rem;
-        //     }
-
-        //     figure img {
-        //         width: 90%; /* GIF más pequeño */
-        //         max-width: 300px; /* Máximo en pantallas pequeñas */
-        //     }
-
-        //     .title {
-        //         font-size: 2.5rem;
-        //     }
-
-        //     .subtitle {
-        //         font-size: 1rem;
-        //     }
-        // }
-
-        // @media (max-width: 480px) {
-        //     figure img {
-        //         width: 100%; /* GIF ocupa el 100% en pantallas muy pequeñas */
-        //         max-width: 250px;
-        //     }
-
-        //     .title {
-        //         font-size: 2rem;
-        //     }
-
-        //     .subtitle {
-        //         font-size: 0.9rem;
-        //     }
-
-        //     .continuos h3 {
-        //         font-size: 1rem;
-        //     }
-        // }
     `;
     render() {
         return html`

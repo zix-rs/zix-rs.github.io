@@ -1,5 +1,6 @@
 import {LitElement, css, html} from 'lit';
 import {customElement} from 'lit/decorators.js';
+import './components/code_block.js'
 
 @customElement('installation-section')
 export class Installation extends LitElement {
@@ -25,67 +26,17 @@ export class Installation extends LitElement {
             width: calc(100%-2rem);
             padding: 0 2rem;
         }
-        .cards  {
+
+        .installs   {
             display: flex;
-            gap: 1rem;
-            justify-content: space-evenly;
-            flex-wrap: wrap;
-            margin: 3rem 0;
-        }
-        .card   {
-            display: flex;
-            background-color: #111;
             flex-direction: column;
             align-items: center;
-            justify-content: space-evenly;
-            width: 400px;
-            height: 400px;
-            padding: 2rem 0;
             gap: 2rem;
-            background-color: #3B1C32;
         }
 
-        .card figure    {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 2rem
+        .install    {
+            width: 90%;
         }
-
-        .card figcaption    {
-            font-size: 1.3rem;
-        }
-
-        .card img   {
-            height: auto;
-            object-fit: contain;
-        }
-
-        .win-img    {
-            width: 60%
-        }
-
-        .rust-img   {
-            width: 100%;
-        }
-
-        .card a {
-            color: #ddd;
-            text-decoration: none;
-            background-color: #A64D79;
-            width: 80%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: .8rem 0;
-        }
-
-        @media (max-width: 508px) {
-            .card   {
-                width: 70%;
-            }
-        }
-
     `;
 
 
@@ -93,20 +44,30 @@ export class Installation extends LitElement {
     render() {
         return html`
             <h2>INSTALLATION</h2>
-            <section class="cards">
-                <div class="card windows">
-                    <figure>
-                        <figcaption>WINDOWS</figcaption>
-                        <img class="win-img" src="/windows.svg" alt="windows">
-                    </figure>
-                    <a href="https://github.com/zix-rs/zix/releases/download/v0.0.5/zix-installer.exe">DOWNLOAD</a>
+            <section class="installs">
+                <div class="install">
+                    <h3>
+                        Linux (using curl)
+                    </h3>
+                    <p>
+                        To install <strong>Zix</strong> on Linux, use the following command.
+                        This script will automatically download and install Zix using <code>curl</code>:
+                    </p>
+                    <code-block lang="bash">
+                        curl --proto '=https' --tlsv1.2 -sSf https://raw.githubusercontent.com/zix-rs/zix/refs/heads/main/scripts/install.sh | sh
+                    </code-block>
                 </div>
-                <div class="card rust">
-                    <figure>
-                        <figcaption>USING CARGO</figcaption>
-                        <img class="rust-img" src="/rust.svg" alt="windows">
-                    </figure>
-                    <a href="#">CARGO INSTALL ZIX</a>
+                <div class="install">
+                    <h3>
+                        Powershell
+                    </h3>
+                    <p>
+                        To install <strong>Zix</strong> on Windows, run the following command in PowerShell.
+                        This script will download and execute the installer automatically:
+                    </p>
+                    <code-block lang="powershell">
+                        powershell -c "irm https://raw.githubusercontent.com/zix-rs/zix/refs/heads/main/scripts/install.ps1|iex"
+                    </code-block>
                 </div>
             </section>
         `;
