@@ -1,6 +1,6 @@
 import {LitElement, css, html} from 'lit';
 import {customElement} from 'lit/decorators.js';
-import './components/code_block.js'
+import './components/code-block/index.js'
 
 @customElement('installation-section')
 export class Installation extends LitElement {
@@ -35,6 +35,11 @@ export class Installation extends LitElement {
 
         .install    {
             width: 90%;
+            font-family: Galdeano, serif;
+        }
+
+        .install p {
+            line-height: 1.4rem;
         }
     `;
 
