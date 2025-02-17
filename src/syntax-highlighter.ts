@@ -33,13 +33,24 @@ function codeNodes(lang: Lang, code: string, la: string): string {
 
     let keys = keywordsMap[la as keyof typeof keywordsMap] || new Set()
     let wordRegex = /\b\w+\b/g;
-    let flagRegex = /(?:^|\s)(-[-\w]+)/g;
-    let highlightColor = code.replace(wordRegex, (word) =>   {
-        return keys.has(word) ? `<span class="keyword">${word}</span>` : word;
+    let flagRegex = /(?:^|\s)(-[-\w.]+)/g;
+    let strRegex = /("|')((?:\\\1|(?:(?!\1).))*)\1/g;
+    let urlRegex = /https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)/g
+
+    let highlightColor = code.replace(strRegex, word =>  {
+        return `<span class="string">${word}</span>`
     })
+
+    highlightColor = highlightColor.replace(urlRegex, word => {
+    return `<span class="url">${word}</span>`
+    });
 
     highlightColor = highlightColor.replace(flagRegex, word =>  {
         return `<span class="flag">${word}</span>`
+    })
+
+    highlightColor = highlightColor.replace(wordRegex, (word: string) =>   {
+        return keys.has(word) ? `<span class="keyword">${word}</span>` : word;
     })
 
     return `<code class="language-${lang}">${highlightColor}</code>`

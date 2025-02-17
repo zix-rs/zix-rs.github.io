@@ -2,8 +2,8 @@
 import { LitElement, html } from "lit";
 import { property, customElement } from "lit/decorators.js";
 import { unsafeHTML } from "lit/directives/unsafe-html.js";
-import highlight from "../syntax-highlighter";
-import bash from '../bash.css.js'
+import highlight from "../../syntax-highlighter";
+import bash from '../../bash.css.js'
 
 @customElement('code-block')
 export class CodeBlock extends LitElement {

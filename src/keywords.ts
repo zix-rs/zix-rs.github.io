@@ -1,9 +1,3 @@
-// const bashScriptKeywords = new Set([
-//     "if", "then", "else", "elif", "fi", "case", "esac", "for", "select",
-//     "while", "until", "do", "done", "in", "function", "time", "coproc",
-//     "break", "continue", "return", "exit", "declare", "local", "readonly",
-//     "export", "unset", "trap", "alias", "unalias", "test"
-// ]);
 const bashKeywords = new Set([
     "cd", "ls", "pwd", "echo", "cat", "touch", "rm", "cp", "mv", "mkdir", "rmdir",
     "chmod", "chown", "find", "grep", "sed", "awk", "sort", "uniq", "head", "tail",
@@ -45,13 +39,6 @@ const powershellKeywords = new Set([
     "If", "Else", "For", "While", "Do", "Switch", "Break", "Continue",
     "Function", "Return", "Try", "Catch", "Finally", "powershell"
 ]);
-
-
-// const powershellScriptKeywords = new Set([
-//     "function", "if", "else", "elseif", "switch", "foreach", "for", "while",
-//     "do", "until", "return", "exit", "continue", "break", "trap", "throw",
-//     "try", "catch", "finally", "begin", "process", "end", "param", "dynamicparam"
-// ]);
 
 const jsKeywords = new Set([
     "await", "break", "case", "catch", "class", "const", "continue", "debugger",

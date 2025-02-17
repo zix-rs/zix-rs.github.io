@@ -1,21 +1,24 @@
 import { css } from "lit";
+import { PALETTE } from "./colors";
 
 
 const bash = css`
     .keyword    {
-        color: rgb(166, 77, 121);
+        color: #fff;
     }
     pre {
         width: 100%;
     }
 
     code {
-        background: #111;
-        padding: 1rem .5rem;
+        background: ${PALETTE.secondary};
+        padding: 1rem 1rem;
         font-family: monospace;
-        width: calc(100% - 1rem);
+        width: calc(100% - 1.5rem);
         word-wrap: break-word;
         box-decoration-break: clone;
+        box-shadow: 0 10px 4px -4px #111;
+        border-radius: 10px
     }
 
 
@@ -32,6 +35,14 @@ const bash = css`
     .flag {
         color: #66ccff;
         font-weight: bold;
+    }
+
+    .url {
+        color: #FFB200
+    }
+
+    .string {
+        color: #999
     }
 `
 
