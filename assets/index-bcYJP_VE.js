@@ -172,19 +172,19 @@
                         This script will automatically download and install Zix using <code>curl</code>:
                     </p>
                     <code-block lang="bash">
-                        curl --proto '=https' --tlsv1.2 -sSf https://raw.githubusercontent.com/zix-rs/zix/refs/heads/main/scripts/install.sh | sh
+                        curl --proto '=https' --tlsv1.2 -sSf https://raw.githubusercontent.com/zix-rs/zix/main/scripts/install.sh | sh
                     </code-block>
                 </div>
                 <div class="install">
                     <h3>
-                        Powershell
+                        Powershell (Admin)
                     </h3>
                     <p>
                         To install <strong>Zix</strong> on Windows, run the following command in PowerShell.
                         This script will download and execute the installer automatically:
                     </p>
                     <code-block lang="powershell">
-                        powershell -c "irm https://raw.githubusercontent.com/zix-rs/zix/refs/heads/main/scripts/install.ps1|iex"
+                        powershell -c "irm https://raw.githubusercontent.com/zix-rs/zix/main/scripts/install.ps1|iex"
                     </code-block>
                 </div>
             </section>
